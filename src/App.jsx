@@ -4,7 +4,7 @@ import "./gota.css";
 const App = () => {
   return (
     <svg viewBox="0 0 5200 9500">
-      <rect x="-1" y="1" className="st0" width="5200" height="9500" fill="white"/>
+      <rect x="-1" y="1" className="st0" width="5200" height="9500" fill="black"/>
       <defs>
         <linearGradient id="aspaNaranja">
           <stop offset="0%" stopColor="#F6850F" stopOpacity="100%" />

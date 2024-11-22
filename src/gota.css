@@ -6,7 +6,7 @@
 }
 .aspaNaranja,.aspaGris,.aspaVerde{
     opacity: 0;
-    fill:#ccc;
+    fill:#000;
     transform-origin: 2610px 7162px;
     transform: translateY(-5000px);
     filter: blur(0px) drop-shadow(0px 0px 0px #aaa);
