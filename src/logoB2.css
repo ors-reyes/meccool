@@ -126,6 +126,6 @@
     margin: auto;
     max-height: 100vh;
     opacity: 1;
-    animation: logo 1s forwards 10s;
+    /* animation: logo 1s forwards 10s; */
 }
 @keyframes logo{0%{opacity:1;}100%{opacity:0;}}
