@@ -1,0 +1,73 @@
+.lineaInA,.lineaInB,.lineaInC{
+    fill:none;stroke:#FFF;stroke-width:1;
+    stroke-dasharray: 1275;
+    stroke-dashoffset: 1275;
+    transform-origin: 1750px 2575px;
+    transform: rotate(0deg);
+    /* filter: drop-shadow(20px 20px 15px white); */
+}
+.lineaOutA,.lineaOutB,.lineaOutC{
+    fill:none;stroke:#FFF;stroke-width:1;
+    stroke-dasharray: 2094;
+    stroke-dashoffset: 2094;
+}
+.lineaInA{
+    animation: lineaIn 0.5s forwards,
+               lineaInRotate 0.5s forwards 0.5s,
+               lineaIn 0.5s forwards reverse 2s
+    ;
+}
+.lineaInB{
+    animation: lineaIn 0.1s forwards 0.9s,
+               lineaInRotate 0.5s forwards 1s,
+               lineaIn 0.5s forwards reverse 2s
+    ;
+}
+.lineaInC{
+    animation: lineaIn 0.1s forwards 1.4s,
+               lineaInRotate 0.5s forwards 1.5s,
+               lineaIn 0.5s forwards reverse 2s
+    ;
+}
+.lineaOutA{
+    animation: lineaOut 0.5s forwards 0.5s,
+               lineaOut 0.5s forwards reverse 2s
+    ;
+}
+.lineaOutB{
+    animation: lineaOut 0.5s forwards 1s,
+               lineaOut 0.5s forwards reverse 2s
+    ;
+}
+.lineaOutC{
+    animation: lineaOut 0.5s forwards 1.5s,
+               lineaOut 0.5s forwards reverse 2s
+;
+}
+@keyframes lineaIn{
+    0%{
+        stroke-width: 1;
+        stroke-dashoffset:1275px;
+    }100%{
+        stroke-width: 10;
+        stroke-dashoffset:0px;
+    }
+}
+@keyframes lineaInRotate{
+    0%{
+        stroke-width: 1;
+        transform: rotate(0deg);
+    }100%{
+        stroke-width: 10;
+        transform: rotate(-120deg);
+    }
+}
+@keyframes lineaOut{
+    0%{
+        stroke-width: 1;
+        stroke-dashoffset:2094px;
+    }100%{
+        stroke-width: 10;
+        stroke-dashoffset:0px;
+    }
+}
